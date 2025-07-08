@@ -76,16 +76,22 @@ ul li {
 }
 
 .article-1 {
-    grid-area: article-1;
+    grid-area: a1;
 }
 .article-2 {
-    grid-area: article-2;
+    grid-area: a2;
 }
 .article-3 {
-    grid-area: article-3;
+    grid-area: a3;
 }
 .article-4 {
-    grid-area: article-4;
+    grid-area: a4;
+}
+.article-5 {
+    grid-area: a5;
+}
+.article-6 {
+    grid-area: a6;
 }
 .footer {
     grid-area: footer;
@@ -108,13 +114,12 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: 
-        "site-header"
-        "featured"
-        "article-1"
-        "article-2"
-        "article-3"
-        "article-4"
-        "footer";
+        "a1"
+        "a2"
+        "a3"
+        "a4"
+        "a5"
+        "a6"
 }
 
 /* styling post */ 
@@ -151,27 +156,30 @@ article img {
     padding: 2em;
 }
 
-/* media query tablet layout */ 
+
+ /*media query tablet layout */
 
 @media(min-width: 500px) {
     main {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
-            "featured"
-            "article-1 article-2"
-            "article 3 article-4"
-            "article-5 article 6"
+            "a1 a2"
+            "a3 a4"
+            "a5 a6";
     }
 }
 
-/* media query desktop layout */ 
 
-@media(min-width: 500px) {
+/* media query desktop layout 
+
+@media(min-width: 960px) {
     main {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas:
-            "featured"
+            "featured featured featured"
             "article-1 article-2 article-3"
-            "article 4 article-4 article-6"
+            "article 4 article-5 article-6";
     }
 }
+
+*/ 
