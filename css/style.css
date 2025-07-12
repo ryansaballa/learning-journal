@@ -27,8 +27,9 @@ h1 {
     flex-direction: row;
     width: 100%;
     margin: 0 auto;
-    padding: 1.25em 1.25em;;
+    padding: 1.25em 1.25em;
     justify-content: space-between;
+    background-color: #FAFAFA;
 }
 
 
@@ -159,6 +160,41 @@ article img {
 }
 
 
+/* view more */ 
+
+.section-one {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 4em 0em;
+}
+
+.section-one a {
+    text-decoration: none;
+    color: #090909;
+}
+
+.section-one a:hover {
+    color: #48b02c;
+    text-decoration: underline;
+}
+
+/* footer */ 
+
+footer {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FAFAFA;
+    background-color: #202020;
+    min-height: 2em;
+    margin-top: 2em;
+    padding: 2.25em 2.25em;
+    gap: 2.25em;
+}
+
+
  /*media query tablet layout */
 
 @media(min-width: 768px) {
@@ -171,6 +207,10 @@ article img {
     }
     .featured {
         min-height: 24em;
+    }
+    footer {
+        display: flex;
+        justify-content: space-between;
     }
 }
 
