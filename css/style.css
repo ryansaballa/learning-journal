@@ -152,15 +152,29 @@ body{
 }
 
 .article-header h2,
-.article-header p,
-.article-header a{
-    margin-top: 0.325em;
-    text-decoration: none;;
+.article-header a {
+    margin-top: 0.5em;
+    text-decoration: none;
+}
+
+.article-header p {
+    margin-top: 1.5em;
 }
 
 .main-section .article-header a {
     color:#090909;
 }
+
+.article-meta {
+    display: flex;
+    justify-content: space-between;
+}
+
+.article-date {
+    font-size: 0.75em;
+    padding: 0 0.5em;
+}
+
 
 
 /* styling article layout */
@@ -171,7 +185,7 @@ article img {
     
 }
 
-/* view more */ 
+/* view more section*/ 
 
 .section-one {
     display: flex;
@@ -185,9 +199,12 @@ article img {
     color: #090909;
 }
 
-.section-one a:hover {
+/* hover state */
+
+.section-one a:hover,
+.main-section .article-header a:hover {
     text-decoration: underline;
-    color: grey;
+    color: #767676;
     text-decoration-color: #48b02c;
     text-decoration-thickness: 0.25em;
     text-underline-offset: 8px;
