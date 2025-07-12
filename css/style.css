@@ -12,12 +12,15 @@ html {
 
 /* typography */
 
-h1, h2 {
+h1 {
+    font-size: 1.75em;
     margin: 0;
+    
 }
 
-h1 {
+h2 {
     font-size: 1.5em;
+    display: inline-block;
 }
 
 /* header nav */ 
@@ -128,20 +131,32 @@ body{
 
 /* featured article layout */
 
-.featured {
+.featured-section {
+    display: flex;
+    align-items: end;
     background-image: url("/images/front-end-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    min-height: 18em;
-    display: flex;
-    align-items: center;    
+    min-height: 18em; 
     padding: 2em;
 }
 
-.featured-section .article-header {
-    color:#FAFAFA
+.featured-section .article-header,
+.featured .article-header a {
+    color:#FAFAFA;
 }
+
+.featured {
+    max-width: 50%;
+    padding-bottom: 1.25em;
+}
+
+.featured .article-meta {
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+}
+
 
 /* styling post */ 
 
@@ -151,14 +166,11 @@ body{
     margin-top: 2.5em;
 }
 
+
+
 .article-header h2,
 .article-header a {
-    margin-top: 0.5em;
     text-decoration: none;
-}
-
-.article-header p {
-    margin-top: 1.5em;
 }
 
 .main-section .article-header a {
@@ -168,11 +180,12 @@ body{
 .article-meta {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: 1em 0;
 }
 
 .article-date {
     font-size: 0.75em;
-    padding: 0 0.5em;
 }
 
 
@@ -181,8 +194,6 @@ body{
 
 article img {
     width: 100%;
-    margin-bottom: 0.5em;
-    
 }
 
 /* view more section*/ 
@@ -201,14 +212,23 @@ article img {
 
 /* hover state */
 
+.featured-section .article-header a:hover {
+    text-decoration: underline;
+    color: #FAFAFA;
+    text-decoration-color: #48b02c;
+    text-decoration-thickness: 0.15em;
+    text-underline-offset: 8px;
+}
+
 .section-one a:hover,
 .main-section .article-header a:hover {
     text-decoration: underline;
     color: #767676;
     text-decoration-color: #48b02c;
-    text-decoration-thickness: 0.25em;
+    text-decoration-thickness: 0.15em;
     text-underline-offset: 8px;
 }
+
 
 /* footer */ 
 
@@ -236,7 +256,7 @@ footer {
             "a3 a4"
             "a5 a6";
     }
-    .featured {
+    .featured-section {
         min-height: 24em;
     }
     footer {
@@ -255,7 +275,7 @@ footer {
             "a1 a2 a3"
             "a4 a5 a6";
     }
-    .featured {
+    .featured-section {
         min-height: 30em;
     }
 }
