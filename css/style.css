@@ -191,7 +191,8 @@ body{
     margin: 1em 0;
 }
 
-.article-date {
+.article-date,
+.entry-article-date {
     font-size: 0.75em;
 }
 
@@ -285,4 +286,29 @@ footer {
     .featured-section {
         min-height: 30em;
     }
+}
+
+
+/* Article Entry Layout */ 
+
+.entry-article-main-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 2em;
+    padding: 0em 2em;
+}
+
+.entry-article-title h2 {
+    text-decoration: none;
+    color: #090909;
+}
+
+.entry-article-date {
+    margin-bottom: 2em;
+}
+
+.entry-article-img {
+ width: 100%;
+ margin: 1.25em 0;
 }
