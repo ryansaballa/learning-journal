@@ -227,7 +227,7 @@ article img {
 .featured-section .article-header a:hover {
     text-decoration: underline;
     color: #FAFAFA;
-    text-decoration-color: #48b02c;
+    text-decoration-color: #3a52ee;
     text-decoration-thickness: 0.15em;
     text-underline-offset: 4px;
 }
@@ -236,7 +236,7 @@ article img {
 .main-section .article-header a:hover {
     text-decoration: underline;
     color: #767676;
-    text-decoration-color: #48b02c;
+    text-decoration-color: #3a52ee;
     text-decoration-thickness: 0.15em;
     text-underline-offset: 8px;
 }
@@ -323,16 +323,21 @@ footer {
 
 .entry-article-main-section h2,
 .entry-article-main-section h3,
-.entry-article-main-section p,
 .personal-bio,
 .personal-bio-copy h2,
 .personal-bio-copy h3,
-.personal-bio-copy p,
 .personal-bio-intro h2 {
     text-decoration: none;
     color: #090909;
-    margin-bottom: 1em;
+    margin: 0.5em 0em;
 }
+
+/* paragraph styling */
+.entry-article-main-section p,
+.personal-bio p {
+    line-height: 2em;
+}
+
 
 /* Article Entry Layout */ 
 
